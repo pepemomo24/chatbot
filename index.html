@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Profesional Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Botón flotante del chat -->
+    <div id="chat-icon" onclick="toggleChat()" title="Abrir chat">
+        🙄
+    </div>
+
+    <!-- Contenedor del chat -->
+    <div id="chat-container" class="hidden">
+        <div id="chat-header">
+            <span>Asistente Virtual</span>
+            <button id="close-chat" onclick="toggleChat()">✖</button>
+        </div>
+        <div id="chat-body">
+            <div id="chat-messages"></div>
+        </div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="¿En qué te puedo ayudar?" autocomplete="off">
+            <button id="send-button" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
